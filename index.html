@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIO Counselling and Training Services</title>
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+        .achievements {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .achievements img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .section-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .vision-mission-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .vision-mission-container div {
+            width: 48%;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+        .slide {
+            display: none;
+            text-align: center;
+        }
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .appointment-button {
+            position: fixed;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .appointment-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo1.jpg" alt="PIO Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#founder-profile">Founder's Profile</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button class="appointment-button" onclick="openFormPage()">Book Appointment</button>
+        <section id="hero" class="banner">
+            <img src="banner.jpg" alt="Banner Image" class="banner-image">
+        </section>
+        <section id="about">
+            <div class="section-inner">
+                <div class="vision-mission-container">
+                    <div>
+                        <h2>Vision</h2>
+                        <p>To evoke peace within</p>
+                    </div>
+                    <div>
+                        <h2>Mission</h2>
+                        <p>Accepting life’s downfalls as the greatest learning prospects through counselling and training</p>
+                    </div>
+                </div>
+<marquee><h1> BOOKING WILL BE OPEN SOON </marquee></h1>
+                <h2>About Us</h2>
+                <p>As healed healers, we have been working for more than ten years conducting counselling and training sessions to help people triumph in various aspects of life. As the next phase, to cater to the greater need of society, we have teamed under the banner of PIO counselling and training center with a common vision and mission to eradicate needless worries in the hope of invoking peace.</p>
+                <h3>Goals</h3>
+                <ul>
+                    <li>Increasing Awareness towards Emotional Well-being</li>
+                    <li>Aiming at Personal Growth and Development</li>
+                    <li>Improving Relationships</li>
+                    <li>Providing Mental Support</li>
+                    <li>Developing Skills</li>
+                </ul>
+            </div>
+        </section>
+        <section id="founder-profile">
+            <div class="section-inner">
+                <h2>Founder's Profile</h2>
+                <img src="founder.jpg" alt="Founder's Photo" class="founder-photo">
+                <p>Arthi Sujai is the founder of PIO Counseling and Training Services. With over a decade of experience in counselling and training, she is passionate about helping individuals overcome challenges and achieve their full potential.</p>
+                <p>Arthi holds a Master's degree in Psychology and has received numerous accolades for her contributions to the field of mental health.</p>
+<h2>NOTE FROM FOUNDER</h2>
+<p>Throughout my extensive career, my focus has been on revitalizing marital relationships, empowering individuals on journeys of self-improvement, and strengthening parent-child bonds. I bring a wealth of expertise in evidence-based therapies such as Cognitive Behavioral Therapy (CBT), Rational Emotive Behavior Therapy (REBT), and Mindfulness-Based CBT, tailoring interventions to address negative thought patterns and foster positive behavioral change. Additionally, my proficiency extends to Imago Couple Therapy, enhancing communication skills, and employing strategies from Acceptance and Commitment Therapy (ACT) for mindful living. Adept in conflict management, I help individuals and families navigate challenges to build healthier, more fulfilling relationships. With a commitment to maintaining confidentiality and utilizing strong case formulation skills, I create a safe and supportive environment. My passion lies in fostering well-being, promoting positive connections, and making a meaningful impact on the lives of those I serve. Let's connect and embark on a journey towards positive transformation.</p>
+            </div>
+        </section>
+        <section id="reviews">
+            <div class="section-inner">
+                <h2>Reviews</h2>
+                <div class="review">
+                    <h3>Jayasundari Sundarrajan</h3>
+                    <p>"I am really very proud to write a review on a person who really changed my way of living ....I personally had lots of trauma in my life,don't know how to come out and I was in a big confusion.By dat time I met aarthy mam,she is a such a wonderful person who can understand our pain and she showed me the way how to b myself .she s very professional and even help us at any point of time with out any expectations.today am happy and confident only coz of her counseling , thank u so much mam .And one more thing she never go for a any pills ......thank u mam"</p>
+                </div>
+                <div class="review">
+                    <h3>Ramakrishnan R</h3>
+                    <p>"I would suggest PIO for all those who are looking for inner healing. Breaking the inhibitions to step into a clinic to take care of your mental health vanishes the moment you step inside. I was personally impressed and benefitted."</p>
+                </div>
+            </div>
+        </section>
+        <section id="achievements">
+            <div class="section-inner">
+                <h2>Achievements</h2>
+                <div class="slideshow-container">
+                    <div class="slide">
+                        <img src="award.jpg" alt="Achievement 1">
+                        <p>Event 1: A recent milestone, the Lifetime Achievement Award from Palakarangal NGO.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="session.jpg" alt="Achievement 2">
+                        <p>Event 2: Lead a session on "Emotional Stability"</p>
+                    </div>
+                    <!-- Add more slides as needed -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="section-inner">
+                <h2>Contact Us</h2>
+                <p>You can find us on:</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/arthi-sujai-16304053/">LinkedIn (Arthi Sujai)</a></li>
+                    <li><a href="https://www.linkedin.com/company/pio-counselling-and-training-services/">LinkedIn (PIO Counseling and Training Services)</a></li>
+                </ul>
+                <p>Or, you can send us an email at <a href="mailto:arthi.piocounselling@gmail.com">arthi.piocounselling@gmail.com</a>.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        © Copyright PIO, 2024
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function plusSlides(n) {
+            slideIndex += n;
+            showSlides();
+        }
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            if (slideIndex >= slides.length) {slideIndex = 0}
+            if (slideIndex < 0) {slideIndex = slides.length - 1}
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex].style.display = "block";
+            setTimeout(() => {
+                slideIndex++;
+                showSlides();
+            }, 3000); // Change slide every 3 seconds
+        }
+
+        function openFormPage() {
+            window.open('form.html', '_blank');
+        }
+    </script>
+</body>
+</html>
